@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/third_railways"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray_bg">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/train_live_button"
+        android:layout_marginLeft="99dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="18dp"
+        android:text=" ++ ACTIVE INTERNET"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <ImageButton
+        android:id="@+id/seat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/seat_availability"
+        android:background="@drawable/rounded_corners_imagebutton"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_alignTop="@+id/pnr_status_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/pnr_status_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pnr_status"
+        android:background="@drawable/rounded_corners_imagebutton"
+        android:layout_marginTop="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/fare_button"
+        android:layout_alignStart="@+id/fare_button" />
+
+    <ImageButton
+        android:id="@+id/train_live_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners_imagebutton"
+        app:srcCompat="@drawable/live_status"
+        android:layout_marginTop="57dp"
+        android:layout_below="@+id/pnr_status_button"
+        android:layout_alignLeft="@+id/seat_button"
+        android:layout_alignStart="@+id/seat_button" />
+
+    <ImageButton
+        android:id="@+id/fare_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/fare"
+        android:background="@drawable/rounded_corners_imagebutton"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp" />
+
+    <RelativeLayout
+        android:id="@+id/adViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+
+
+</RelativeLayout>

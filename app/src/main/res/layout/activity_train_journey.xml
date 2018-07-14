@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_full"
+    android:backgroundTint="#80FFFFFF"
+    android:backgroundTintMode="src_over"
+    tools:context="com.sololaunches.www.keralarailandmetro.train_list">
+
+    <android.widget.ListView
+        android:id="@+id/train_journey"
+        android:layout_width="wrap_content"
+        android:layout_height="429dp"
+        android:visibility="visible"
+        android:layout_above="@+id/getCurrentStats"
+        android:layout_alignParentTop="true">
+
+    </android.widget.ListView>
+
+    <Button
+        android:id="@+id/getCurrentStats"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="17dp"
+        android:background="@android:color/holo_green_light"
+        android:text="GET CURRENT STATUS">
+
+    </Button>
+</RelativeLayout>

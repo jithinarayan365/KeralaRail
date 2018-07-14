@@ -1,0 +1,262 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/form_list_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="8"
+    android:background="@drawable/gray_bg"
+    android:orientation="vertical"
+    tools:context="com.sololaunches.www.keralarailandmetro.OpeningScreenTabs$PlaceholderFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="430dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/district_txt"
+                    android:layout_width="163dp"
+                    android:layout_height="45dp"
+                    android:background="@android:color/background_light"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="    Choose District"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="18sp" />
+
+
+                <Spinner
+                    android:id="@+id/district"
+                    android:layout_width="191dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:drawable/btn_dropdown" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/police_txt"
+                    android:layout_width="177dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1.07"
+                    android:background="@android:color/white"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="      Police"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/place_holder_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/railway_police"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@android:color/background_light"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="      Railway Police"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rail_police_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/blood_bank_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@android:color/background_light"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="      Blood Bank"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blood_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/Fire_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@android:color/background_light"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="      Fire"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fire_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/disaster_management"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@android:color/background_light"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="      Earthquake/Disaster"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/disaster_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/hospital_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@android:color/background_light"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="      Hospital"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hospital_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/womens_cell"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:background="@android:color/background_light"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="      Women's Helpline"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/women_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/adViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginBottom="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.startapp.android.publish.ads.banner.Banner
+            android:id="@+id/startAppBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

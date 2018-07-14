@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/black"
+    tools:context="com.sololaunches.www.keralarailandmetro.OpeningScreenTabs$PlaceholderFragment">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:id="@+id/linearLayout2">
+
+        <fragment
+            android:id="@+id/topFragment"
+            android:name="com.sololaunches.www.keralarailandmetro.RailwayToFromFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/first_fragment_railways" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

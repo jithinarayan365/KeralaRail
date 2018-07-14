@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray_bg">
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_destination"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:background="@android:color/white"
+        android:hint=" Enter Station (End)"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/image_a"
+        android:layout_toRightOf="@+id/image_b"
+        android:layout_toEndOf="@+id/image_b"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/source"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:background="@android:color/white"
+        android:hint="  Enter Station (Start) Ex: TCR"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/station"
+        android:layout_alignLeft="@+id/auto_destination"
+        android:layout_alignStart="@+id/auto_destination" />
+
+    <AutoCompleteTextView
+        android:id="@+id/station"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:background="@android:color/white"
+        android:hint="Type- Station Or Train-Name/Number"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/title_text"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/schedule"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Search Trains -Station A to B                "
+        android:textAlignment="center"
+        android:textColor="#7bbaf2"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/AtoB"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:background="#838387"
+        android:text="        Search Trains - A to B                 " />
+
+    <Button
+        android:id="@+id/schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/AtoB"
+        android:background="#9b9c9d"
+        android:text="         Train/Station Schedule                 " />
+
+    <ImageView
+        android:id="@+id/image_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/a_final"
+        android:layout_alignTop="@+id/source"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/image_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/b_final"
+        android:layout_alignBottom="@+id/auto_destination"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:id="@+id/adViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="81dp"
+        android:layout_below="@+id/auto_destination"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.startapp.android.publish.ads.banner.Banner
+            android:id="@+id/startAppBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

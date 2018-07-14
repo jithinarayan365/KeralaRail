@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray_bg"
+    tools:context="com.sololaunches.www.keralarailandmetro.RetrieverLiveTrainStatus">
+
+
+    <DatePicker
+        android:id="@+id/datePickerSeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:backgroundTintMode="src_over"
+        android:calendarTextColor="@android:color/holo_purple"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:elevation="4dp"
+        android:padding="-10dp"
+        android:paddingBottom="-10dp"
+        android:paddingEnd="-10dp"
+        android:paddingLeft="-10dp"
+        android:paddingRight="-10dp"
+        android:paddingStart="-10dp"
+        android:paddingTop="-10dp"
+        android:scaleX="1.0"
+        android:scaleY="1.0"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/train_number_seat"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Enter Train No. Example :16345"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_below="@+id/imageView8"
+        android:layout_alignLeft="@+id/destination_seat"
+        android:layout_alignStart="@+id/destination_seat" />
+
+    <AutoCompleteTextView
+        android:id="@+id/destination_seat"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Enter Ending Station Code  Eg: TCR "
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_below="@+id/imageView7"
+        android:layout_centerHorizontal="true" />
+
+    <AutoCompleteTextView
+        android:id="@+id/source_seat"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Enter Starting Station Code"
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_below="@+id/datePickerSeat"
+        android:layout_alignLeft="@+id/destination_seat"
+        android:layout_alignStart="@+id/destination_seat"
+        android:layout_marginTop="11dp" />
+
+
+    <Button
+        android:id="@+id/get_train_status_seat"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/spinner_Quota"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_green_light"
+        android:text="  Check Availability  "
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/currentStatusProgress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/source_seat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp" />
+
+    <Spinner
+        android:id="@+id/spinner_Quota"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:textStyle="normal"
+        android:layout_below="@+id/spinnerClass"
+        android:layout_alignLeft="@+id/spinnerClass"
+        android:layout_alignStart="@+id/spinnerClass" />
+
+    <Spinner
+        android:id="@+id/spinnerClass"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="11dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:textSize="40sp"
+        android:textStyle="normal"
+        android:layout_below="@+id/train_number_seat"
+        android:layout_alignLeft="@+id/train_number_seat"
+        android:layout_alignStart="@+id/train_number_seat" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerClass"
+        android:layout_alignStart="@+id/spinnerClass"
+        android:layout_below="@+id/spinnerClass"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/a_final"
+        android:layout_alignTop="@+id/source_seat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/b_final"
+        android:layout_below="@+id/imageView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        app:srcCompat="@android:drawable/ic_menu_help"
+        android:layout_above="@+id/spinnerClass"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/source_seat"
+        android:layout_alignRight="@+id/imageView8"
+        android:layout_alignEnd="@+id/imageView8" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/spinner_Quota"
+        android:layout_toStartOf="@+id/spinner_Quota"
+        android:background="@drawable/back"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignEnd="@+id/spinner_Quota"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/spinner_Quota"
+        android:background="@drawable/close"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

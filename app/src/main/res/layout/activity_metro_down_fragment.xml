@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray_bg"
+    tools:context="com.sololaunches.www.keralarailandmetro.MetroDownFragment">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Towards Pettah"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <ListView
+        android:id="@+id/list_down"
+        android:layout_width="381dp"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="26dp"
+        tools:layout_editor_absoluteX="2dp"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteY="362dp" />
+
+</RelativeLayout>

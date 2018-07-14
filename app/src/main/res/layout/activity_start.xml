@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/front_page"
+    tools:context="com.sololaunches.www.keralarailandmetro.StartActivity">
+
+    <TextView
+        android:id="@+id/startText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="452dp"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/startText2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp" />
+
+    <TextView
+        android:id="@+id/startText2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/startText3"
+        android:layout_alignLeft="@+id/startText"
+        android:layout_alignStart="@+id/startText" />
+
+    <TextView
+        android:id="@+id/startText3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/startText2"
+        android:layout_alignStart="@+id/startText2" />
+</RelativeLayout>

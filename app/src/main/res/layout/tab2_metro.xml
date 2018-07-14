@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    tools:context="com.sololaunches.www.keralarailandmetro.OpeningScreenTabs$PlaceholderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <fragment
+            android:id="@+id/fourth_railways"
+            android:name="com.sololaunches.www.keralarailandmetro.MetroSecondFragment"
+            android:layout_width="472dp"
+            android:layout_height="598dp"
+            tools:layout="@layout/metro_second_fragment" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

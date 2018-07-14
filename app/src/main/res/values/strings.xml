@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Kerala Rail and Metro </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main_divided_screen">MainDividedScreen</string>
+    <string name="title_activity_first_menu_screen">FirstMenuScreen</string>
+    <string name="title_activity_opening_tab_screen">Kerala Rail and Metro</string>
+    <string name="title_activity_opening_screen_tabs">Kerala Rail and Metro</string>
+    <color name="autocompletet_background_color">#c9d3db</color>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_developer_info">DeveloperInfoActivity</string>
+    <string name="txtCredits">www.sololaunches.com</string>
+</resources>

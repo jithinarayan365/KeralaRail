@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sololaunches.www.keralarailandmetro">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_new"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_new"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.startapp.android.publish.ads.list3d.List3DActivity"
+            android:theme="@android:style/Theme" />
+        <activity
+            android:name="com.startapp.android.publish.adsCommon.activities.OverlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.startapp.android.publish.adsCommon.activities.FullScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme" />
+        <activity android:name=".ListActivity" />
+        <activity android:name=".RailwayMenu" />
+        <activity android:name=".train_list" />
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OpeningScreenTabs"
+            android:label="@string/title_activity_opening_screen_tabs"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TrainJourney" />
+        <activity android:name=".metro_map" />
+        <activity android:name=".PnrStatus" />
+        <activity android:name=".RetrieverLiveTrainStatus" />
+        <activity
+            android:name=".DeveloperInfoActivity"
+            android:label="@string/title_activity_developer_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".current_train_status" />
+        <activity android:name=".PnrResultDisplay" />
+        <activity android:name=".MetroChoiceScreen" />
+        <activity android:name=".MetroFareActivity" />
+        <activity android:name=".MetroToAndFromActivity" />
+        <activity android:name=".MetroUpFragment" />
+        <activity android:name=".MetroDownFragment" />
+        <activity android:name=".RailwayFareActivity" />
+        <activity
+            android:name=".RailwaySeatAvailabilityActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".UpdateScreen" />
+        <activity android:name=".FinalUpdateStage" />
+        <activity android:name=".ErrorActivity" />
+        <activity android:name=".RatingActivity" />
+        <activity android:name=".FareDisplay" />
+        <activity android:name=".SeatAvailabilityDisplay" />
+        <activity android:name=".MainChoiceScreen"/>
+        <activity android:name=".MetroMain" />
+        <activity android:name=".HelplineMain"></activity>
+    </application>
+
+</manifest>
